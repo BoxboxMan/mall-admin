@@ -21,6 +21,9 @@ class MMUtil{
                 url        : param.url      || '',
                 dataType   : param.type     || "json",
                 data       : param.data     || null,
+                xhrFields  : {
+                    withCredentials : true
+                },
                 success    : res => {
                     // 数据成功
                     if(10001 === res.status){

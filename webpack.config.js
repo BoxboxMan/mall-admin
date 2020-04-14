@@ -1,8 +1,8 @@
 /*
 * @Author: Rosen
 * @Date:   2016-11-20 13:19:28
-* @Last Modified by:   Rosen
-* @Last Modified time: 2018-12-04 16:57:45
+* @Last Modified by:   MR.S
+* @Last Modified time: 2020-04-15 03:33:22
 * 知识点：css单独打包、全局jquery引用、各种loader
 */
 
@@ -26,7 +26,7 @@ var config = {
     // path && publickPath
     output: {
         path        : __dirname + '/dist/',
-        publicPath  : WEBPACK_ENV === 'online' ? '//s.happymmall.com/admin-fe/dist/' : '/dist/',
+        publicPath  : WEBPACK_ENV === 'online' ? '//s.wannarich.com/mall-admin/dist/' : '/dist/',
         filename    : 'js/[name].js'
     },
     resolve: {
@@ -83,7 +83,7 @@ var config = {
         // html 加载
         new HtmlWebpackPlugin({
             filename        : 'view/index.html',
-            title           : 'MMall 后台管理系统',
+            title           : 'Mall 后台管理系统',
             template        : './src/index.html',
             favicon         : './favicon.ico',
             inject          : true,
