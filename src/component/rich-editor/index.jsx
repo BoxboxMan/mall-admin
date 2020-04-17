@@ -31,8 +31,9 @@ const RichEditor = React.createClass({
         this.editor = new Simditor({
             textarea: $(this.textarea),
             defaultValue: this.props.placeholder,
+            withCredentials : true,
             upload:{
-                url             : _mm.getServerUrl('/manage/product/richtext_img_upload'),
+                url             : 'http://admin.wannarich.com/manage/product/richtext_img_upload',
                 defaultImage    : '',
                 fileKey         :'img'
             }

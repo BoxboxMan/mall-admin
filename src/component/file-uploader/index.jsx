@@ -27,12 +27,12 @@ const FileUploader = React.createClass({
     render() {
         /*set properties*/
         const options={
-            baseUrl         : _mm.getServerUrl('/manage/product/upload'),
+            baseUrl         : 'http://admin.wannarich.com/manage/product/upload',
             fileFieldName   : 'file',
             accept          : 'image/gif,image/jpeg,image/jpg,image/png',
             chooseAndUpload : true,
             uploadSuccess   : this.props.onSuccess,
-            uploadError     : this.props.onError
+            uploadError     : this.props.onError,
         }
         /*Use FileUpload with options*/
         /*Set two dom with ref*/
