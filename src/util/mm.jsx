@@ -8,7 +8,7 @@
 'use strict';
 
 const conf = {
-    serverHost: 'http://nginx.wannarich.com/',
+    serverHost: 'http://admin.wannarich.com/',
     imgHost: 'http://image.wannarich.com/',
 }
 
